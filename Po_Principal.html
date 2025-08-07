@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Dharma Sandoval | Portafolio</title>
+
+	<!-- Google Fonts: Poppins -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+	<!-- Estilos -->
+	<link rel="stylesheet" href="CSS/P_Estilos1.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/6.6.6/css/flag-icon.min.css" />
+
+	<!-- Bootstrap & Bootstrap Icons -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<div class="selector-idioma">
+  <button id="idioma-toggle">🌐</button>
+  <div class="idioma-menu">
+    <button onclick="cambiarIdioma('es')">ES</button>
+    <button onclick="cambiarIdioma('en')">EN</button>
+  </div>
+</div>
+
+
+
+	<section class="hero-creativo">
+		<div class="contenido-hero">
+			<h1> Hola, Soy Dharma </h1>
+			<p>Desarrolladora Front-End y Artista 3D especializada en sitios interactivos y entornos en Videojuegos 3D.</p>
+			<div class="botones-hero">
+				<a href="#proyectos" class="btn-hero">Ver Proyectos</a>
+				<a id="btn-descargar-cv" href="CV_ES_DharmaSandovalSanchez1.pdf" download class="btn-hero secundario">
+					<i class="bi bi-download"></i> Descargar CV
+				</a>
+			</div>
+		</div>
+	</section>
+
+	<section class="sobre-mi" id="sobre-mi ">
+		<div class="container-sobre-mi">
+			<div class="foto-sobre-mi">
+				<img src="Images/FPerfil.jpg" alt="Foto de Dharma Sandoval" />
+			</div>
+			<div class="texto-sobre-mi">
+				<h2>Sobre mí</h2>
+				<p>
+					Soy Dharma Sandoval, programadora Front-End y Artista 3D con pasión por transformar ideas en experiencias digitales envolventes. Me especializo en crear interfaces limpias y dinámicas, así como entornos 3D para videojuegos y animaciones.
+				</p>
+				<p>
+					Mi objetivo es unirme a proyectos innovadores donde pueda aportar creatividad y técnica, y continuar creciendo profesionalmente en el mundo de la tecnología y el arte digital.
+				</p>
+				<ul class="datos-personales">
+					<li><strong>Ubicación:</strong> Monterrey, México</li>
+				</ul>
+			</div>
+		</div>
+	</section>
+
+	<!-- Botones laterales -->
+	<div class="botones-laterales">
+		<a href="https://www.linkedin.com/in/dharma-sandoval-8282b8315/" target="_blank" class="btn-lateral linkedin" aria-label="LinkedIn">
+			<i class="bi bi-linkedin"></i>
+		</a>
+		<a href="https://github.com/DharmaSandoval" target="_blank" class="btn-lateral github" aria-label="GitHub">
+			<i class="bi bi-github"></i>
+		</a>
+	</div>
+
+
+	<section class="formacion" id="formacion">
+		<h2>Formación Académica</h2>
+
+		<div class="filtros">
+			<button class="btn-filtro active" data-filtro="estudios">Estudios</button>
+			<button class="btn-filtro" data-filtro="cursos">Cursos</button>
+			<button class="btn-filtro" data-filtro="idiomas">Idiomas</button>
+		</div>
+
+		<div class="lista-items">
+			<!-- Estudios -->
+			<div class="item-estudio" data-categoria="estudios" style="display: flex; align-items: center; gap: 1rem;">
+				<img src="Images/LogoUANL.png" alt="Imagen izquierda" style="width: 120px; height: auto; border-radius: 8px;" />
+
+				<div style="flex: 1;">
+					<h3>Licenciatura en Multimedia y Animación Digital</h3>
+					<div class="institucion">Universidad Autónoma de Nuevo León</div>
+					<div class="fechas">2018 - 2025</div>
+					<div class="descripcion">
+						Formación enfocada en el área del Desarrollo 3D, creación de videojuegos, programación web, y producción audiovisual.
+					</div>
+				</div>
+
+				<img src="Images/LogoFCFM.png" alt="Imagen derecha" style="width: 120px; height: auto; border-radius: 8px;" />
+			</div>
+
+
+			<!-- Cursos -->
+			<div class="item" data-categoria="cursos" style="display:none;">
+				<h3>Curso de C++ </h3>
+				<div class="institucion">Coursera</div>
+				<div class="fechas">2023</div>
+				<div class="descripcion">
+					Curso avanzado sobre el aprendizaje en C++.
+				</div>
+			</div>
+
+			<div class="item" data-categoria="cursos" style="display:none;">
+				<h3>Curso de Blender 3D</h3>
+				<div class="institucion">Udemy</div>
+				<div class="fechas">2024</div>
+				<div class="descripcion">
+					Modelado, texturizado y animación básica en Blender.
+				</div>
+			</div>
+
+			<!-- Idiomas -->
+			<div class="item" data-categoria="idiomas" style="display:none;">
+				<h3>Español</h3>
+				<div class="institucion">Nativo</div>
+				<div class="fechas"></div>
+				<div class="descripcion">
+					Lengua materna.
+				</div>
+			</div>
+
+			<div class="item" data-categoria="idiomas" style="display:none;">
+
+				<h3>Inglés</h3>
+				<div class="institucion">Certificado en B1.</div>
+				<div class="fechas"></div>
+				<div class="descripcion">
+					Ideal para la comunicación y enfoque laboral.
+				</div>
+			</div>
+
+			<div class="item" data-categoria="idiomas" style="display:none;">
+				<h3>Coreano</h3>
+				<div class="institucion">Intermedio</div>
+				<div class="fechas"></div>
+				<div class="descripcion">
+					Nivel intermedio. Preparación para TOPIK 1.
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="stack-tecnico" id="competencias">
+
+		<div class="contenedor-stack">
+			<h2> Habilidades </h2>
+
+			<div class="filtro-habilidades">
+				<button class="btn-filtro-habilidad activo" data-filtro="Front-End">Front-End</button>
+				<button class="btn-filtro-habilidad" data-filtro="Programación">Programación</button>
+				<button class="btn-filtro-habilidad" data-filtro="3D y Videojuegos">3D y Videojuegos</button>
+				<button class="btn-filtro-habilidad" data-filtro="Herramientas">Herramientas</button>
+			</div>
+
+
+			<div class="categoria oculto" data-categoria="Front-End">
+
+				<div class="tecnologias">
+
+					<div class="tech">
+						<i class="bi bi-filetype-html"></i>
+						<div class="tech-texto">
+							<span>HTML5</span>
+							<div class="barra-progreso">
+								<div class="barra" style="--porcentaje: 95%;"></div>
+								<span class="porcentaje-texto">95%</span>
+							</div>
+							<small class="nivel">Avanzado</small>
+						</div>
+					</div>
+
+					<div class="tech">
+						<i class="bi bi-filetype-css"></i>
+						<div class="tech-texto">
+							<span>CSS3</span>
+							<div class="barra-progreso">
+								<div class="barra" style="--porcentaje: 90%;"></div>
+								<span class="porcentaje-texto">90%</span>
+							</div>
+							<small class="nivel">Avanzado</small>
+						</div>
+					</div>
+
+					<div class="tech">
+						<i class="bi bi-bootstrap"></i>
+						<div class="tech-texto">
+							<span>Bootstrap</span>
+							<div class="barra-progreso">
+								<div class="barra" style="--porcentaje: 90%;"></div>
+								<span class="porcentaje-texto">90%</span>
+							</div>
+							<small class="nivel">Avanzado</small>
+						</div>
+					</div>
+
+					<div class="tech">
+						<i class="bi bi-filetype-js"></i>
+						<div class="tech-texto">
+							<span>JavaScript</span>
+							<div class="barra-progreso">
+								<div class="barra" style="--porcentaje: 85%;"></div>
+								<span class="porcentaje-texto">85%</span>
+							</div>
+							<small class="nivel">Intermedio</small>
+						</div>
+					</div>
+
+
+				</div>
+			</div>
+
+			<div class="categoria oculto" data-categoria="Programación">
+
+				<div class="tecnologias">
+
+					<div class="tech">
+						<i class="bi bi-code-slash"></i>
+						<div class="tech-texto">
+							<span>C++</span>
+							<div class="barra-progreso">
+								<div class="barra" style="--porcentaje: 85%;"></div>
+								<span class="porcentaje-texto">85%</span>
+							</div>
+							<small class="nivel">Intermedio</small>
+						</div>
+					</div>
+
+					<div class="tech">
+						<i class="bi bi-code-slash"></i>
+						<div class="tech-texto">
+							<span>C#</span>
+							<div class="barra-progreso">
+								<div class="barra" style="--porcentaje: 70%;"></div>
+								<span class="porcentaje-texto">70%</span>
+							</div>
+							<small class="nivel">Básico</small>
+						</div>
+					</div>
+
+					<div class="tech">
+						<i class="bi bi-window"></i>
+						<div class="tech-texto">
+							<span>.NET Windows Forms</span>
+							<div class="barra-progreso">
+								<div class="barra" style="--porcentaje: 70%;"></div>
+								<span class="porcentaje-texto">70%</span>
+							</div>
+							<small class="nivel">Básico</small>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="categoria oculto" data-categoria="3D y Videojuegos">
+				<div class="tecnologias">
+
+					<div class="tech">
+						<i class="bi bi-box"></i>
+						<div class="tech-texto">
+							<span>Autodesk Maya</span>
+							<div class="barra-progreso">
+								<div class="barra" style="--porcentaje: 90%;"></div>
+								<span class="porcentaje-texto">90%</span>
+							</div>
+							<small class="nivel">Avanzado</small>
+						</div>
+					</div>
+
+					<div class="tech">
+						<i class="bi bi-brush"></i>
+						<div class="tech-texto">
+							<span>ZBrush</span>
+							<div class="barra-progreso">
+								<div class="barra" style="--porcentaje: 80%;"></div>
+								<span class="porcentaje-texto">80%</span>
+							</div>
+							<small class="nivel">Intermedio</small>
+						</div>
+					</div>
+
+					<div class="tech">
+						<i class="bi bi-box"></i>
+						<div class="tech-texto">
+							<span>Blender 3.6</span>
+							<div class="barra-progreso">
+								<div class="barra" style="--porcentaje: 80%;"></div>
+								<span class="porcentaje-texto">80%</span>
+							</div>
+							<small class="nivel">Intermedio</small>
+						</div>
+					</div>
+
+					<div class="tech">
+						<i class="bi bi-controller"></i>
+						<div class="tech-texto">
+							<span> Unreal Engine </span>
+							<div class="barra-progreso">
+								<div class="barra" style="--porcentaje: 95%;"></div>
+								<span class="porcentaje-texto">95%</span>
+							</div>
+							<small class="nivel">Avanzado</small>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="categoria" data-categoria="Herramientas">
+				<div class="tecnologias">
+
+					<div class="tech">
+						<i class="bi bi-git"></i>
+						<div class="tech-texto">
+							<span>GitHub</span>
+							<div class="barra-progreso">
+								<div class="barra" style="--porcentaje: 85%;"></div>
+								<span class="porcentaje-texto">85%</span>
+							</div>
+							<small class="nivel">Intermedio</small>
+						</div>
+					</div>
+
+					<div class="tech">
+						<i class="bi bi-terminal"></i>
+						<div class="tech-texto">
+							<span>Visual Studio Code</span>
+							<div class="barra-progreso">
+								<div class="barra" style="--porcentaje: 90%;"></div>
+								<span class="porcentaje-texto">90%</span>
+							</div>
+							<small class="nivel">Avanzado</small>
+						</div>
+					</div>
+
+					<div class="tech">
+						<i class="bi bi-camera-video"></i>
+						<div class="tech-texto">
+							<span>OBS Studio</span>
+							<div class="barra-progreso">
+								<div class="barra" style="--porcentaje: 90%;"></div>
+								<span class="porcentaje-texto">90%</span>
+							</div>
+							<small class="nivel">Avanzado</small>
+						</div>
+					</div>
+
+					<div class="tech">
+						<i class="bi bi-layers"></i>
+						<div class="tech-texto">
+							<span>After Effects</span>
+							<div class="barra-progreso">
+								<div class="barra" style="--porcentaje: 80%;"></div>
+								<span class="porcentaje-texto">80%</span>
+							</div>
+							<small class="nivel">Intermedio</small>
+						</div>
+					</div>
+
+
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="proyectos" id="proyectos">
+		<h2>Mi Portafolio</h2>
+		<div class="filtros-proyectos">
+			<button class="btn-filtro-proyecto active" data-filtro="todos">Todos</button>
+			<button class="btn-filtro-proyecto" data-filtro="3d">3D</button>
+			<button class="btn-filtro-proyecto" data-filtro="programacion">Programación</button>
+			<button class="btn-filtro-proyecto" data-filtro="videojuegos">Videojuegos</button>
+		</div>
+
+		<div class="grid-proyectos">
+			<article class="card-proyecto" data-categoria="3d">
+				<img src="Images/Rig_1.png" alt="Rigging Personaje Femenino" />
+				<h3>Rigging 3D</h3>
+				<p>Rig completo hecho en Autodesk Maya 2023, con controles FK/IK, faciales, blendshapes y skinning optimizado.</p>
+				<a href="https://github.com/DharmaSandoval/3D-Rigging" class="btn-proyecto" target="_blank">Ver Proyecto</a>
+
+			</article>
+
+			<article class="card-proyecto" data-categoria="programacion">
+				<img src="Images/PEC_1.png" alt="Plataforma e-commerce" />
+				<h3>Plataforma E-Commerce</h3>
+				<p>Desarrollo de plataforma web funcional para E-Commerce con gestión de productos, carrito, wishlist y perfiles de usuario.</p>
+				<a href="https://github.com/DharmaSandoval/Web-ECommerce" class="btn-proyecto" target="_blank">Ver Proyecto</a>
+			</article>
+
+			<article class="card-proyecto" data-categoria="programacion">
+				<img src="Images/PW_1.png" alt="Blog Personal" />
+				<h3>Blog Personal</h3>
+				<p>Diseño y programación de una plataforma tipo blog con panel de administración, editor de entradas, categorías y sistema de comentarios.</p>
+				<a href="https://github.com/DharmaSandoval/Personal-Blog" class="btn-proyecto" target="_blank">Ver Proyecto</a>
+			</article>
+
+			<article class="card-proyecto" data-categoria="3d">
+				<img src="Images/3D_1.png" alt="Animación 3D Corto Musical" />
+				<h3>Animación 3D</h3>
+				<p>Animación 3D sobre un número musical, hecho en Blender 3.6, con diseño visual, animación de personajes, sincronización musical y renderizado final.</p>
+
+				<a href="#" class="btn-proyecto" onclick="abrirModal(event, 'video1')">Ver Video</a>
+			</article>
+
+
+			<div class="modal-video" id="video1">
+				<div class="contenido-video">
+					<span class="cerrar" onclick="cerrarModal('video1')">&times;</span>
+					<video controls>
+      <source src="Images/video.mp4" type="video/mp4">
+      Tu navegador no soporta el video.
+    </video>
+				</div>
+			</div>
+
+
+			<article class="card-proyecto" data-categoria="videojuegos">
+				<img src="Images/4D4S_1.png" alt="Videojuego 4 Doors, 4 Seasons" />
+				<h3> 4 Doors, 4 Seasons </h3>
+				<p>Creación y Desarrollo independiente de videojuego completo en Unreal Engine 4.27, incluyendo diseño de niveles, narrativa, mecánicas y optimización.</p>
+				<a href="https://github.com/DharmaSandoval/4Doors-4Seasons" class="btn-proyecto" target="_blank">Ver Proyecto</a>
+			</article>
+		</div>
+	</section>
+
+	<section class="contacto" id="contacto">
+		<div class="container">
+			<h2 class="titulo-seccion">Contacto</h2>
+			<div class="contacto-grid">
+
+				<div class="contacto-item">
+					<i class="fas fa-envelope"></i>
+					<h4>Correo</h4>
+					<a href="mailto:tu@email.com">dharmasanchez76@gmail.com</a>
+				</div>
+				<div class="contacto-item">
+					<i class="fas fa-phone"></i>
+					<h4>Teléfono</h4>
+					<p>+52 81 1682 6054</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="JS/P_Script1.js"></script>
+	<script src="JS/Traductor.js"></script>
+
+</body>
